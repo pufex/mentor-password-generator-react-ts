@@ -1,0 +1,38 @@
+.checkbox-container{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.checkbox{
+  display: grid;
+  place-items: center;
+  height: 1.75rem;
+  aspect-ratio: 1;
+  border: 2px solid white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox:hover:not(.active){
+  box-shadow: 0 0 8px white;
+}
+
+.checkbox:hover.active{
+  box-shadow: 0 0 8px rgba(38, 255, 0, 0.883);
+}
+
+.checkbox.active{
+  background-color: var(--creative-color);
+  border: 2px solid var(--creative-color);
+}
+
+.checkbox-label{
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-wrap: nowrap;
+  text-transform: capitalize;
+}

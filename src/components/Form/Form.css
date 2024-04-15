@@ -1,0 +1,31 @@
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--main-color);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.btn--submit{
+  --_translation-hover: -5px;
+  --_translation-active: 5px;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--creative-color);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  transition: 300ms transform ease-out;
+}
+
+.btn--submit:hover{
+  transform: translateY(var(--_translation-hover));
+}
+
+.btn--submit:active{
+  transition: 50ms transform ease-out;
+  transform: translateY(var(--_translation-active));
+}

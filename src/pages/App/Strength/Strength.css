@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.strength-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  border-radius: 5px;
+  background-color: var(--input-color);
+  font-family: "Source Code Pro", monospace;
+  padding: 0.5rem 1rem;
+  user-select: none;
+}
+
+.strength-container *{
+  font-family: "Source Code Pro", monospace !important;
+  font-family: inherit !important;
+}
+
+.strength-title{
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+}
+
+.strength__summary{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.strength-info{
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.strength-bars{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.strength-bar{
+  height: 24px;
+  width: 10px;
+  border: 2px solid white;
+}
+
+.strength-bar.active{
+  background-color: var(--creative-color-secondary);
+  border: 2px solid var(--creative-color-secondary);
+}
